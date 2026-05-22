@@ -69,6 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollY = window.scrollY;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     
+    // Fade out hero background image on scroll
+    const heroBg = document.querySelector('.hero-bg-img');
+    if (heroBg) {
+      const scrollRatio = Math.min(scrollY / window.innerHeight, 1);
+      heroBg.style.opacity = 0.25 * (1 - scrollRatio);
+    }
+    
     // Top Scroll Progress Bar
     if (progressBar && docHeight > 0) {
       const scrollPercent = (scrollY / docHeight) * 100;

@@ -152,8 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6. Project Details Data & Premium Modal Controls
   const projectData = {
     shm: {
-      title: "SHM-iSM (반도체 위험물 안전관리 통합시스템)",
-      img: "assets/images/project_shm_ism.png",
+      title: "AI 비전인식을 활용한 분리수거 시스템",
+      img: "assets/images/project_shm_ism.jpg",
       description: "2025년 첨단산업 인재양성 부트캠프 경진대회에서 1등상(한국산업기술진흥원장상)을 수상한 작품입니다. 반도체 생산 설비 구역 내 가스 누출, 인화성 물질 보관 관리 상태를 통합 실시간 모니터링합니다. AI 스마트 IP 카메라로 작업자의 보호구 착용 여부 및 허가받지 않은 인원의 출입을 자동으로 식별하고 경보를 발령합니다.",
       specs: [
         "<strong>주제어 장치:</strong> NVIDIA Jetson Orin Nano (Edge AI), Arduino Mega 2560",
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     cafe: {
       title: "무인화 로봇카페 시스템",
-      img: "assets/images/project_robot_cafe.png",
+      img: "assets/images/project_robot_cafe.jpg",
       description: "2024년 제42회 동양미래EXPO 최우수상 수상작입니다. 현대의 스마트 무인 매장 트렌드에 대응하여 설계되었으며, 음료의 주문, 제조, 밀봉 및 서빙 구역 전달까지의 전 과정에 사람이 개입하지 않는 100% 자동화를 시연했습니다.",
       specs: [
         "<strong>로봇 팔 본체:</strong> Doosan Robotics M0609 (6축 다관절 협동 로봇, 가반하중 6kg)",

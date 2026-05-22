@@ -165,7 +165,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .section {
-  padding: 9rem 0 5rem;
+  padding: 4rem 0 5rem;
   position: relative;
 }
 
@@ -649,13 +649,14 @@ header {
    AWARDS TIMELINE
    ========================================= */
 .timeline-section {
-  background: var(--bg-secondary);
+  /* background removed to match the transparent style of other pages */
 }
 
 .timeline-outer {
   position: relative;
   max-width: 860px;
   margin: 0 auto;
+  display: flow-root;
 }
 
 /* Center guide line */
@@ -688,6 +689,7 @@ header {
   width: 50%;
   padding-bottom: 3.5rem;
   z-index: 3;
+  clear: both;
 }
 
 .t-item-left  { float: left;  padding-right: 3.5rem; }
@@ -751,6 +753,7 @@ header {
   color: var(--text-heading);
   line-height: 1.4;
   margin-bottom: 0.75rem;
+  word-break: keep-all;
 }
 
 .t-award .highlight {
@@ -762,11 +765,12 @@ header {
 
 .t-work {
   font-size: 0.85rem;
-  color: var(--text-muted);
-  background: var(--grad-soft);
-  border-left: 3px solid var(--accent-indigo);
-  border-radius: 0 8px 8px 0;
-  padding: 0.5rem 0.9rem;
+  color: var(--text-body);
+  background: rgba(79, 70, 229, 0.06);
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  word-break: keep-all;
+  line-height: 1.5;
 }
 
 /* =========================================

@@ -92,11 +92,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const viewHeight = window.innerHeight;
       
       // Calculate how much the timeline wrapper has scrolled into the viewport
-      const startTrigger = viewHeight * 0.7; // start showing progress early
+      const startTrigger = viewHeight * 0.85; // start showing progress early
       const totalHeight = rect.height;
       const progressTop = -rect.top + startTrigger;
       
       let percentage = (progressTop / totalHeight) * 100;
+      
+      // Force 100% if we hit the bottom of the page so it doesn't get stuck on short pages
+      if (Math.ceil(window.scrollY + viewHeight) >= document.documentElement.scrollHeight - 20) {
+        percentage = 100;
+      }
+      
       percentage = Math.max(0, Math.min(100, percentage)); // clamp between 0% and 100%
       
       timelineProgressLine.style.height = `${percentage}%`;
@@ -104,8 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
       // Activate dots based on progress
       timelineDots.forEach(dot => {
         const dotRect = dot.getBoundingClientRect();
-        // If the progress line (which aligns with view height / 2 or dot positions) crosses the dot
-        if (dotRect.top < viewHeight * 0.7) {
+        // If the progress line crosses the dot or timeline is fully completed
+        if (dotRect.top < startTrigger || percentage === 100) {
           dot.classList.add('lit');
         } else {
           dot.classList.remove('lit');

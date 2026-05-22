@@ -3,19 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="동양미래대학교 로봇자동화공학부 핵심 전공동아리 MCA(Mechatronics & Control Automation)의 정체성, 기술력, 화려한 수상 실적 및 대표 프로젝트를 소개하는 공식 웹페이지입니다.">
-  <meta name="keywords" content="동양미래대학교, 로봇자동화공학부, MCA, 전공동아리, 메카트로닉스, 자율주행, 인공지능, SHM-iSM, 로봇공학">
-  <meta name="author" content="MCA (Mechatronics & Control Automation)">
-  <title>MCA | 동양미래대학교 로봇자동화공학부 핵심 전공동아리</title>
-  
-  <!-- CSS Stylesheet -->
+  <title>MCA | 동아리 소개</title>
   <link rel="stylesheet" href="css/style.css">
-  
-  <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-
   <!-- Top Scroll Progress Bar -->
   <div id="scroll-progress"></div>
 
@@ -35,8 +27,8 @@
       
       <nav aria-label="Main Navigation">
         <ul class="nav-pill" id="nav-menu">
-          <li><a href="index.html" class="nav-link active" id="nav-link-home">홈</a></li>
-          <li><a href="about.html" class="nav-link" id="nav-link-about">동아리 소개</a></li>
+          <li><a href="index.html" class="nav-link" id="nav-link-home">홈</a></li>
+          <li><a href="about.html" class="nav-link active" id="nav-link-about">동아리 소개</a></li>
           <li><a href="activities.html" class="nav-link" id="nav-link-activities">주요 활동</a></li>
           <li><a href="awards.html" class="nav-link" id="nav-link-awards">수상 내역</a></li>
           <li><a href="projects.html" class="nav-link" id="nav-link-projects">프로젝트</a></li>
@@ -50,49 +42,68 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-bg-img"></div>
-    <div class="container hero-content">
-      <div class="hero-eyebrow">
-        <span class="eyebrow-dot"></span>
-        <span>DONGYANG MIRAE UNIVERSITY PD LAB</span>
-      </div>
-      
-      <h1 class="hero-title">
-        <span class="text-gradient">MCA</span>
-      </h1>
-      
-      <p class="hero-desc">
-        기계공학(Mechatronics), 지능형 제어(Control), 창의적 자동화(Automation)를 결합하여 실용적이고 혁신적인 스마트 솔루션을 설계합니다.
-      </p>
-      
-      <div class="value-pills">
-        <div class="value-pill">
-          <i data-lucide="cpu"></i>
-          <span>Mechatronics <span class="pill-sub">융합 기술</span></span>
+  <main style="padding-top: 80px; min-height: 80vh;">
+    <!-- About MCA Section -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <div class="section-label">ABOUT US</div>
+        <h2 class="section-title"><span class="text-gradient">ABOUT MCA</span></h2>
+        <p class="section-subtitle">동양미래대학교 로봇자동화공학부 소속의 대표 전공동아리(PD Lab)인 MCA를 소개합니다.</p>
+        
+        <div class="about-wrap">
+          <div class="about-text">
+            <h3>기계, 전기, 전자를 결합한<br><span class="text-gradient">차세대 로봇 제어 솔루션</span></h3>
+            <p>
+              MCA는 기계, 전기, 전자 공학을 복합적으로 응용하여 통신 및 제어회로, 소프트웨어 프로그램을 개발하는 동양미래대학교 로봇자동화공학부 소속의 전공동아리(PD Lab)입니다. 한계를 두지 않는 기술 융합 학습을 통해 산업 현장에서 요구하는 설계 능력을 습득합니다.
+            </p>
+            
+            <div class="info-cards">
+              <div class="info-card">
+                <div class="info-card-label">동아리실 위치</div>
+                <div class="info-card-value">4호관 510호</div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-label">지도교수</div>
+                <div class="info-card-value">김학성 교수, 이영화 교수</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="research-stack">
+            <div class="glass-card research-item">
+              <div class="research-ico">
+                <i data-lucide="bot"></i>
+              </div>
+              <div class="research-info">
+                <h4>지능형 로봇 (Intelligent Robots)</h4>
+                <p>인공지능(AI)과 증강현실(AR) 기술을 이용해 자율 환경을 탐색하고 복잡한 명령을 수행하는 로봇 시스템을 설계합니다.</p>
+              </div>
+            </div>
+            
+            <div class="glass-card research-item">
+              <div class="research-ico">
+                <i data-lucide="navigation"></i>
+              </div>
+              <div class="research-info">
+                <h4>자율주행 시스템 (Autonomous Driving)</h4>
+                <p>자율주행 서비스 로봇 및 스마트 창고 물류를 위한 센서 융합 기반의 정밀 무인 제어 아키텍처를 연구합니다.</p>
+              </div>
+            </div>
+            
+            <div class="glass-card research-item">
+              <div class="research-ico">
+                <i data-lucide="shield-alert"></i>
+              </div>
+              <div class="research-info">
+                <h4>산업 연계 제어 (Industrial Control)</h4>
+                <p>반도체 생산 장비 제어 및 유해 작업장 내 위험물질 관리를 실시간 통합 제어하는 자동화 시스템을 제작합니다.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="value-pill">
-          <i data-lucide="sliders"></i>
-          <span>Control <span class="pill-sub">지능형 제어</span></span>
-        </div>
-        <div class="value-pill">
-          <i data-lucide="git-branch"></i>
-          <span>Automation <span class="pill-sub">창의적 자동화</span></span>
-        </div>
       </div>
-      
-      <div class="btn-group">
-        <a href="about.html" class="btn btn-primary" id="btn-hero-explore">
-          <span>동아리 소개</span>
-          <i data-lucide="arrow-right"></i>
-        </a>
-        <a href="projects.html" class="btn btn-outline" id="btn-hero-projects">
-          <span>프로젝트 보기</span>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer Section -->
   <footer>

@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 3. Interactive Mouse Spotlight Effect
-  const spotlightElements = document.querySelectorAll('.tech-card, .project-card, .timeline-content, .company-card');
+  const spotlightElements = document.querySelectorAll('.act-card, .research-item, .proj-card, .t-card, .company-card');
   
   // Only apply on desktop devices with hover capabilities
   if (window.matchMedia('(hover: hover)').matches) {
@@ -61,9 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const header = document.getElementById('main-header');
   const sections = document.querySelectorAll('section[id]');
   const progressBar = document.getElementById('scroll-progress');
-  const timelineWrapper = document.querySelector('.timeline-wrapper');
-  const timelineProgressLine = document.querySelector('.timeline-progress-line');
-  const timelineDots = document.querySelectorAll('.timeline-dot');
+  const timelineWrapper = document.querySelector('.timeline-outer');
+  const timelineProgressLine = document.querySelector('.timeline-fill');
+  const timelineDots = document.querySelectorAll('.t-dot');
 
   function handleScrollEffects() {
     const scrollY = window.scrollY;
@@ -84,19 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Scroll Active Link Highlighting
-    sections.forEach(current => {
-      const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 120;
-      const sectionId = current.getAttribute('id');
-      const activeLink = document.querySelector(`.nav-menu a[href*=${sectionId}]`);
-
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        if (activeLink) activeLink.classList.add('active');
-      } else {
-        if (activeLink) activeLink.classList.remove('active');
-      }
-    });
+    // Scroll Active Link Highlighting has been removed as this is now a multi-page site
 
     // Dynamic Timeline Roadmap Active Line Height calculation
     if (timelineWrapper && timelineProgressLine) {
@@ -118,9 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const dotRect = dot.getBoundingClientRect();
         // If the progress line (which aligns with view height / 2 or dot positions) crosses the dot
         if (dotRect.top < viewHeight * 0.7) {
-          dot.classList.add('timeline-dot-active');
+          dot.classList.add('lit');
         } else {
-          dot.classList.remove('timeline-dot-active');
+          dot.classList.remove('lit');
         }
       });
     }
@@ -218,18 +206,18 @@ document.addEventListener('DOMContentLoaded', () => {
       modalSpecs.appendChild(li);
     });
 
-    modal.classList.add('modal-active');
+    modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden'; 
   }
 
   function closeModal() {
-    modal.classList.remove('modal-active');
+    modal.classList.remove('open');
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = ''; 
   }
 
-  const projectButtons = document.querySelectorAll('.project-link');
+  const projectButtons = document.querySelectorAll('.proj-link');
   projectButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       const projectId = btn.getAttribute('data-project-id');
@@ -243,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('modal-active')) {
+    if (e.key === 'Escape' && modal && modal.classList.contains('open')) {
       closeModal();
     }
   });

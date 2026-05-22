@@ -339,10 +339,10 @@ header {
 .hero-bg-img {
   position: absolute;
   inset: 0;
-  background-image: url('../assets/images/mca_hero_bg.png');
+  background-image: url('../assets/images/hero_bg_new.png');
   background-size: cover;
-  background-position: center;
-  opacity: 0.06;
+  background-position: left center;
+  opacity: 0.25;
   z-index: 0;
 }
 

@@ -3,19 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="동양미래대학교 로봇자동화공학부 핵심 전공동아리 MCA(Mechatronics & Control Automation)의 정체성, 기술력, 화려한 수상 실적 및 대표 프로젝트를 소개하는 공식 웹페이지입니다.">
-  <meta name="keywords" content="동양미래대학교, 로봇자동화공학부, MCA, 전공동아리, 메카트로닉스, 자율주행, 인공지능, SHM-iSM, 로봇공학">
-  <meta name="author" content="MCA (Mechatronics & Control Automation)">
-  <title>MCA | 동양미래대학교 로봇자동화공학부 핵심 전공동아리</title>
-  
-  <!-- CSS Stylesheet -->
+  <title>MCA | 수상 내역</title>
   <link rel="stylesheet" href="css/style.css">
-  
-  <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-
   <!-- Top Scroll Progress Bar -->
   <div id="scroll-progress"></div>
 
@@ -35,10 +27,10 @@
       
       <nav aria-label="Main Navigation">
         <ul class="nav-pill" id="nav-menu">
-          <li><a href="index.html" class="nav-link active" id="nav-link-home">홈</a></li>
+          <li><a href="index.html" class="nav-link" id="nav-link-home">홈</a></li>
           <li><a href="about.html" class="nav-link" id="nav-link-about">동아리 소개</a></li>
           <li><a href="activities.html" class="nav-link" id="nav-link-activities">주요 활동</a></li>
-          <li><a href="awards.html" class="nav-link" id="nav-link-awards">수상 내역</a></li>
+          <li><a href="awards.html" class="nav-link active" id="nav-link-awards">수상 내역</a></li>
           <li><a href="projects.html" class="nav-link" id="nav-link-projects">프로젝트</a></li>
           <li><a href="career.html" class="nav-link" id="nav-link-career">진로 및 비전</a></li>
         </ul>
@@ -50,49 +42,71 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-bg-img"></div>
-    <div class="container hero-content">
-      <div class="hero-eyebrow">
-        <span class="eyebrow-dot"></span>
-        <span>DONGYANG MIRAE UNIVERSITY PD LAB</span>
-      </div>
-      
-      <h1 class="hero-title">
-        <span class="text-gradient">MCA</span>
-      </h1>
-      
-      <p class="hero-desc">
-        기계공학(Mechatronics), 지능형 제어(Control), 창의적 자동화(Automation)를 결합하여 실용적이고 혁신적인 스마트 솔루션을 설계합니다.
-      </p>
-      
-      <div class="value-pills">
-        <div class="value-pill">
-          <i data-lucide="cpu"></i>
-          <span>Mechatronics <span class="pill-sub">융합 기술</span></span>
+  <main style="padding-top: 80px; min-height: 80vh;">
+    <!-- Awards Timeline Section -->
+    <section id="awards" class="section timeline-section reveal">
+      <div class="container">
+        <div class="section-label">ACHIEVEMENTS</div>
+        <h2 class="section-title"><span class="text-gradient">HALL OF FAME</span></h2>
+        <p class="section-subtitle">도전과 열정으로 입증된 MCA의 찬란한 혁신적 이력과 수상 연혁입니다.</p>
+        
+        <div class="timeline-outer">
+          <!-- Progressive Scroll Gauge Line -->
+          <div class="timeline-fill"></div>
+
+          <!-- 2025 -->
+          <div class="t-item t-item-left">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-year">2025</div>
+              <h3 class="t-award">첨단산업 인재양성 부트캠프 8개 연합 경진대회 <span class="highlight">미래인재상 (1등/한국산업기술진흥원장상)</span> 수상</h3>
+              <p class="t-work">반도체 위험물 안전관리 통합시스템 SHM-iSM</p>
+            </div>
+          </div>
+          
+          <!-- 2024 -->
+          <div class="t-item t-item-right">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-year">2024</div>
+              <h3 class="t-award">제42회 동양미래EXPO <span class="highlight">최우수상</span> 수상</h3>
+              <p class="t-work">무인화 로봇카페 시스템</p>
+            </div>
+          </div>
+          
+          <!-- 2023 -->
+          <div class="t-item t-item-left">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-year">2023</div>
+              <h3 class="t-award">디지텍 캡스톤디자인 경진대회 <span class="highlight">디지스타상 (대상)</span> 수상 및 제41회 동양미래EXPO 최우수상 수상</h3>
+              <p class="t-work">전국 규모 대학생 대상 기술력 검증 및 우수 제어 아키텍처 실현</p>
+            </div>
+          </div>
+          
+          <!-- 2022 -->
+          <div class="t-item t-item-right">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-year">2022</div>
+              <h3 class="t-award">산학협력 EXPO <span class="highlight">최우수상</span> 및 동양EXPO 최우수상 수상</h3>
+              <p class="t-work">지역 산업체 연계 최우수 캡스톤디자인 작품 제안</p>
+            </div>
+          </div>
+          
+          <!-- Previous -->
+          <div class="t-item t-item-left">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-year">PREVIOUS</div>
+              <h3 class="t-award">ICT융합 졸업작품 공모전 협회장상 등 다수 수상</h3>
+              <p class="t-work">2019년 졸업공모전 입상 등 설립 이래 매해 주요 성과 지속 배출</p>
+            </div>
+          </div>
         </div>
-        <div class="value-pill">
-          <i data-lucide="sliders"></i>
-          <span>Control <span class="pill-sub">지능형 제어</span></span>
-        </div>
-        <div class="value-pill">
-          <i data-lucide="git-branch"></i>
-          <span>Automation <span class="pill-sub">창의적 자동화</span></span>
-        </div>
       </div>
-      
-      <div class="btn-group">
-        <a href="about.html" class="btn btn-primary" id="btn-hero-explore">
-          <span>동아리 소개</span>
-          <i data-lucide="arrow-right"></i>
-        </a>
-        <a href="projects.html" class="btn btn-outline" id="btn-hero-projects">
-          <span>프로젝트 보기</span>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer Section -->
   <footer>

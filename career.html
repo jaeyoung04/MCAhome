@@ -3,19 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="동양미래대학교 로봇자동화공학부 핵심 전공동아리 MCA(Mechatronics & Control Automation)의 정체성, 기술력, 화려한 수상 실적 및 대표 프로젝트를 소개하는 공식 웹페이지입니다.">
-  <meta name="keywords" content="동양미래대학교, 로봇자동화공학부, MCA, 전공동아리, 메카트로닉스, 자율주행, 인공지능, SHM-iSM, 로봇공학">
-  <meta name="author" content="MCA (Mechatronics & Control Automation)">
-  <title>MCA | 동양미래대학교 로봇자동화공학부 핵심 전공동아리</title>
-  
-  <!-- CSS Stylesheet -->
+  <title>MCA | 진로 및 비전</title>
   <link rel="stylesheet" href="css/style.css">
-  
-  <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-
   <!-- Top Scroll Progress Bar -->
   <div id="scroll-progress"></div>
 
@@ -35,12 +27,12 @@
       
       <nav aria-label="Main Navigation">
         <ul class="nav-pill" id="nav-menu">
-          <li><a href="index.html" class="nav-link active" id="nav-link-home">홈</a></li>
+          <li><a href="index.html" class="nav-link" id="nav-link-home">홈</a></li>
           <li><a href="about.html" class="nav-link" id="nav-link-about">동아리 소개</a></li>
           <li><a href="activities.html" class="nav-link" id="nav-link-activities">주요 활동</a></li>
           <li><a href="awards.html" class="nav-link" id="nav-link-awards">수상 내역</a></li>
           <li><a href="projects.html" class="nav-link" id="nav-link-projects">프로젝트</a></li>
-          <li><a href="career.html" class="nav-link" id="nav-link-career">진로 및 비전</a></li>
+          <li><a href="career.html" class="nav-link active" id="nav-link-career">진로 및 비전</a></li>
         </ul>
       </nav>
       
@@ -50,49 +42,50 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-bg-img"></div>
-    <div class="container hero-content">
-      <div class="hero-eyebrow">
-        <span class="eyebrow-dot"></span>
-        <span>DONGYANG MIRAE UNIVERSITY PD LAB</span>
-      </div>
-      
-      <h1 class="hero-title">
-        <span class="text-gradient">MCA</span>
-      </h1>
-      
-      <p class="hero-desc">
-        기계공학(Mechatronics), 지능형 제어(Control), 창의적 자동화(Automation)를 결합하여 실용적이고 혁신적인 스마트 솔루션을 설계합니다.
-      </p>
-      
-      <div class="value-pills">
-        <div class="value-pill">
-          <i data-lucide="cpu"></i>
-          <span>Mechatronics <span class="pill-sub">융합 기술</span></span>
+  <main style="padding-top: 80px; min-height: 80vh;">
+    <!-- Career & Vision Section -->
+    <section id="career" class="section reveal">
+      <div class="container">
+        <div class="section-label">VISION</div>
+        <h2 class="section-title"><span class="text-gradient">CAREER & VISION</span></h2>
+        <p class="section-subtitle">실무 중심으로 탄탄하게 훈련받은 MCA 선배들은 최고의 전문 기술 기업으로 진출하고 있습니다.</p>
+        
+        <div class="career-wrap">
+          <div class="career-left">
+            <h3>주요 취업처</h3>
+            <p>MCA 활동을 통해 익힌 하드웨어 설계, 펌웨어 임베디드 칩 설계, 그리고 ROS 기반 통신 제어 실력을 무기로 반도체 디바이스, 자동차 제어 장치, 서비스 로봇 제작 분야를 주도하는 대기업 및 글로벌 부품 제조사로 진출합니다.</p>
+            
+            <div class="company-grid">
+              <div class="company-card"><span class="co-name">삼성전자</span></div>
+              <div class="company-card"><span class="co-name">LG계열사</span></div>
+              <div class="company-card"><span class="co-name">SK하이닉스</span></div>
+              <div class="company-card"><span class="co-name">램리서치코리아</span></div>
+            </div>
+          </div>
+          
+          <div class="glass-card cert-wrap">
+            <h3>전문 자격증 대비</h3>
+            <p>이론만이 아닌 실제 제어기 튜닝과 회로 배선, 공압 실린더 제어를 학습하므로, 기사 및 산업기사 작업형 시험에 우수한 실무 노하우를 바탕으로 빠르게 적응합니다.</p>
+            
+            <div class="cert-list">
+              <div class="cert-row">
+                <i data-lucide="award"></i>
+                <span>생산자동화산업기사</span>
+              </div>
+              <div class="cert-row">
+                <i data-lucide="award"></i>
+                <span>전자계산기제어산업기사</span>
+              </div>
+              <div class="cert-row">
+                <i data-lucide="award"></i>
+                <span>메카트로닉스 산업기사 / 기사</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="value-pill">
-          <i data-lucide="sliders"></i>
-          <span>Control <span class="pill-sub">지능형 제어</span></span>
-        </div>
-        <div class="value-pill">
-          <i data-lucide="git-branch"></i>
-          <span>Automation <span class="pill-sub">창의적 자동화</span></span>
-        </div>
       </div>
-      
-      <div class="btn-group">
-        <a href="about.html" class="btn btn-primary" id="btn-hero-explore">
-          <span>동아리 소개</span>
-          <i data-lucide="arrow-right"></i>
-        </a>
-        <a href="projects.html" class="btn btn-outline" id="btn-hero-projects">
-          <span>프로젝트 보기</span>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer Section -->
   <footer>

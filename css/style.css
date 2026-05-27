@@ -1338,8 +1338,12 @@ footer {
   .hero-title    { font-size: 2.5rem; }
   .info-cards    { grid-template-columns: 1fr; }
   .career-stat-grid { grid-template-columns: 1fr; }
+  .proj-grid     { grid-template-columns: 1fr; }
+  .act-grid      { grid-template-columns: 1fr; }
   .feed-actions  { flex-wrap: wrap; }
   .comment-inputs { flex-direction: column; }
+  .board-compose { padding: 1rem; }
+  .feed-card     { padding: 1rem; }
 
   .nav-pill {
     position: fixed;

@@ -15,13 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
       hamburger.setAttribute('aria-expanded', !isExpanded);
       navMenu.classList.toggle('active');
       
-      // Toggle Hamburger icon
+      // Toggle Hamburger icon & Body scroll lock
       const icon = hamburger.querySelector('i');
       if (icon) {
         if (navMenu.classList.contains('active')) {
           icon.setAttribute('data-lucide', 'x');
+          document.body.style.overflow = 'hidden'; // 스크롤 방지
         } else {
           icon.setAttribute('data-lucide', 'menu');
+          document.body.style.overflow = ''; // 스크롤 허용
         }
         lucide.createIcons();
       }
@@ -37,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
           icon.setAttribute('data-lucide', 'menu');
           lucide.createIcons();
         }
+        document.body.style.overflow = ''; // 메뉴 닫힐 때 스크롤 잠금 해제
       });
     });
   }

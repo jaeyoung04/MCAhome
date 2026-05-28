@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     digi: {
       title: "Digi-Star 대상 융합 자동화 시스템",
-      img: "assets/images/mca_hero_bg.png",
+      img: "",
       description: "2023년 디지텍 캡스톤디자인 경진대회에서 대상(디지스타상)을 차지한 학과의 핵심 역량 결집 작품입니다. 가로, 세로, 대각선 및 제자리 360도 회전이 자유로운 메카넘 휠 자율 주행 차량(AGV) 위에 정밀 자동 제어 프레임워크를 결합하여 미지의 장애물을 탐지 및 회피하며 임무를 완수합니다.",
       specs: [
         "<strong>메인 프로세서:</strong> Raspberry Pi 4 Model B (상위 제어), STM32F407 Cortex-M4 (하위 모터 제어)",
@@ -201,6 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const modalTitle = document.getElementById('modal-project-title');
   const modalImg = document.getElementById('modal-project-img');
+  const modalPlaceholder = document.getElementById('modal-project-placeholder');
   const modalDesc = document.getElementById('modal-project-description');
   const modalSpecs = document.getElementById('modal-project-specs');
   const modalImpact = document.getElementById('modal-project-impact');
@@ -210,8 +211,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!data) return;
 
     modalTitle.textContent = data.title;
-    modalImg.src = data.img;
-    modalImg.alt = data.title;
+    
+    if (data.img) {
+      if (modalImg) {
+        modalImg.style.display = 'block';
+        modalImg.src = data.img;
+        modalImg.alt = data.title;
+      }
+      if (modalPlaceholder) modalPlaceholder.style.display = 'none';
+    } else {
+      if (modalImg) modalImg.style.display = 'none';
+      if (modalPlaceholder) modalPlaceholder.style.display = 'flex';
+    }
+
     modalDesc.textContent = data.description;
     modalImpact.textContent = data.impact;
 
